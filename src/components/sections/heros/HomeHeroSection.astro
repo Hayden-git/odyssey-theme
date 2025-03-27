@@ -8,26 +8,26 @@ import {ThemeSwitcher} from '../../theme-switcher/theme-switcher';
 <Container>
 	<section class="hero-section__section">
 		<div class="hero-section__text">
-				<h1>Welcome to Odyssey</h1>
+				<h1>Gnosis Strategies</h1>
+				
 				<p>
-					A marketing website theme built with <a
-						href="https://astro.build"
-						target="_blank"
-						rel="noreferrer">Astro</a
-					> and carefully crafted for startups and businesses.
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi fugiat similique magni culpa nesciunt atque beatae quas dolore odit. Corporis debitis obcaecati accusantium consequuntur nihil perspiciatis tempore asperiores reiciendis pariatur.
 				</p>
+
 				<div class="hero-btns__container">
-					<Button href="/theme/get-started" customIcon
-						>Get Started
-            <Fragment slot="icon">
-              <Icon name="ic:baseline-chevron-right"/>
-            </Fragment>
-            </Button
+					<Button href="/company/contact/" customIcon>
+						Contact Us
+            			
+						<Fragment slot="icon">
+              			<Icon name="ic:baseline-chevron-right"/>
+            			</Fragment>
+            			</Button
 					>
-					<Button href="/theme/style-guide" unelevated>Style Guide</Button>
 				</div>
-        {settings.enableThemeSwitcher && <ThemeSwitcher client:only/>}
+
+        <!-- {settings.enableThemeSwitcher && <ThemeSwitcher client:only/>} -->
 		</div>
+
 		<div class="hero-section__image">
 				<picture>
 					<img

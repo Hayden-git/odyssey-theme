@@ -12,18 +12,20 @@ const {quoteText, customerName} = Astro.props;
 </section>
 
   <style>
-.customer-quote__section {
-  margin: calc(var(--section-margin) * 2) auto;
-  padding: 3rem;
-  background-color: var(--theme-surface-1);
-  text-align: center;
-}
-.customer-quote__section blockquote {
-  padding: 0;
-  border: none;
-  font-size: var(--font-size-md);
-  font-weight: 400;
-  font-style: italic;
-  line-height: 1.8;
-}
+  .customer-quote__section {
+    margin: calc(var(--section-margin) * 2) auto;
+    padding: 3rem;
+    background-color: oklch(0.943 0.029 294.588); /* very Light Purple */
+    text-align: center;
+    /* border-radius: var(--theme-shape-radius); Optional: rounded corners */
+  }
+
+  .customer-quote__section blockquote {
+    padding: 0;
+    border: none;
+    font-size: var(--font-size-md);
+    font-weight: 400;
+    font-style: italic;
+    line-height: 1.8;
+  }
 </style>

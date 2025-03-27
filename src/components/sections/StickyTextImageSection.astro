@@ -23,23 +23,32 @@ const {reversed} = Astro.props;
     grid-template-columns: 6fr 4fr;
     position: relative;
     gap: 2rem;
+    background-color: oklch(0.943 0.029 294.588); /* Very light purple */
+    padding: 3rem; /* Add some padding for better spacing */
+    border-radius: var(--theme-shape-radius); /* Keep consistent rounded corners */
   }
+
   .sticky-text-image__section--reversed {
     grid-template-columns: 4fr 6fr;
   }
+
   .sticky-text-image__section--reversed .sticky-text-image__text {
     order: 2;
   }
+
   .sticky-text-image__image :global(:first-child) {
     position: sticky;
     top: 0;
   }
+
   .sticky-text-image__section :global(img) {
     border-radius: var(--theme-shape-radius);
   }
+
   @media (max-width: 768px) {
     .sticky-text-image__section {
       grid-template-columns: 1fr;
+      padding: 2rem; /* Adjust padding for smaller screens */
     }
   }
 </style>

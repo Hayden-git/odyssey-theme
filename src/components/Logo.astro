@@ -1,18 +1,33 @@
 ---
 ---
 
-<p class="odyssey-logo">Odyssey</p>
+<div class="logo-container">
+  <img class="logo" src="../../public/favicon.png" alt="Logo" />
+  <p class="gnosis-logo">Gnosis Strategies</p>
+</div>
 
 <style>
-	.odyssey-logo {
-		width: fit-content;
-		margin: 0;
-		font-family: var(--theme-font-family-serif);
+  .logo-container {
+    display: flex;
+    align-items: center; /* Ensures vertical alignment */
+    gap: 8px; /* Adds a small space between the logo and text */
+  }
+
+  .logo {
+    width: 64px; /* Adjust the size of the logo */
+    height: 64px;
+  }
+
+  .gnosis-logo {
+    width: fit-content;
+    margin: 0;
+    font-family: var(--theme-font-family-serif);
     font-size: var(--font-size-md);
-		color: inherit;
-	}
-	.odyssey-logo:hover {
-		text-decoration: underline;
-		cursor: pointer;
-	}
+    color: inherit;
+  }
+
+  .gnosis-logo:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
 </style>

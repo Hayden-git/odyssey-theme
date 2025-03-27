@@ -1,6 +1,6 @@
 ---
-import ContactForm from '../../components/forms/ContactForm.astro';
-import Layout from '../../layouts/Page.astro';
+import ContactForm from '../components/forms/ContactForm.astro';
+import Layout from '../layouts/Page.astro';
 import { Container } from '@components/odyssey-theme';
 
 const seo = {
@@ -15,20 +15,18 @@ const seo = {
 			<div class="contact-hero__text-section">
 				<h1>Contact Us</h1>
 				<p>
-					This is a contact form using Odyssey's form components to create a
-					contact form component. The contact form is setup to use Netlify's
-					form detection; however, it can easily be translated to other popular
-					form services such as Formspree, Getform, Formspark, etc.
+					Contact Gnosis Strategies... Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum minima cumque quam quia facere nemo, necessitatibus, voluptatem dolorum maiores hic earum nisi pariatur vitae possimus obcaecati officiis sint deleniti temporibus.
 				</p>
 				<div>
 					<p>
-						<em><a href="tel:8008675309">(800) 867-5309</a></em> • <em
-							><a href="mailto:hello@odysseytheme.com">hello@ourcompany.com</a
+						<em><a href="tel:1112223333">(111) 222-3333</a></em> • <em
+							><a href="mailto:hello@ourcompany.com">hello@ourcompany.com</a
 							></em
 						>
 					</p>
 				</div>
 			</div>
+
 			<div class="col-2__container">
 				<ContactForm />
 			</div>
@@ -49,7 +47,7 @@ const seo = {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		background-color: var(--theme-surface-1);
+		background-color: oklch(0.943 0.029 294.588);
 		border-radius: var(--theme-shape-radius);
 	}
 	.col-2__container {
